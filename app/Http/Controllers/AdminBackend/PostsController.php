@@ -17,7 +17,7 @@ class PostsController extends Controller
 {
     use deleteFile;
 
-    protected $uploads_path = '/uploads/category/';
+    protected $uploads_path = '/uploads/post/';
 
     /**
      * Display a listing of the resource.
