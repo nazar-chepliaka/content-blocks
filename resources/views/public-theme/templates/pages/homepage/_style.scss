@@ -1,0 +1,39 @@
+@import "../../../assets/sass/app";
+
+[data-group=categories_list][data-role=item_wrapper] {
+    padding: 18px;
+}
+
+[data-group=categories_list] [data-role=item] {
+    border: 4px solid #868b94;
+    color: #000;
+    display: block;
+    font-size: 17px;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-radius: 2px;
+    height: 100%;
+    text-decoration: none;
+    background: #ecedf1;
+}
+
+[data-group=categories_list] [data-role=item]:hover {
+    text-decoration: none;
+}
+
+[data-group=categories_list] [data-role=item_image] {
+    padding: 12px;
+    min-height: 120px;
+    background: #ffffff;
+}
+
+[data-group=categories_list] [data-role=title] {
+    padding: 20px;
+}
+
+[data-group=categories_list] [data-role=item_image] img {
+    max-width: 150px;
+    max-height: 90px;
+    height: auto;
+    width: auto;
+}

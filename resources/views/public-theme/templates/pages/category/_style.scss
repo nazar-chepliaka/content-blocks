@@ -1,0 +1,32 @@
+@import "../../../assets/sass/app";
+
+[data-group=posts_list] [data-role=item] {
+	padding: 12px;
+    margin-top: 14px;
+    border-bottom: 2px solid #d9dde2;
+	/* background: #d8d9dc;
+	border-right: 4px solid #a0a0a0; */
+}
+
+[data-group=posts_list] [data-role=item_image] {
+	min-width: 40px;
+	margin-left: 28px;
+	max-width: 220px;
+	width: 220px;
+}
+
+[data-group=posts_list] [data-role=item_image] img{
+	max-width: 100%;
+	height: auto;
+}
+
+[data-group=posts_list] [data-role=item] a {
+	color: #000;
+}
+
+[data-group=posts_list] [data-role=item] [data-role=title] {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+    border-bottom: 1px solid;
+}

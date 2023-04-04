@@ -1,0 +1,24 @@
+$large-size-min-width: 1121px;
+$medium-size-max-width: 1120px;
+$small-size-max-width: 800px;
+$tiny-size-max-width: 600px;
+$xs-size-max-width: 480px;
+
+$grid-columns:      12;
+$grid-gutter-width: 0px;
+
+$grid-breakpoints: (
+  	xs: $xs-size-max-width,
+  	sm: $tiny-size-max-width,
+  	md: $small-size-max-width,
+  	lg: $medium-size-max-width,
+  	xl: 1400px
+);
+
+$container-max-widths: (
+	xs: $xs-size-max-width,
+	sm: $tiny-size-max-width,
+  	md: $small-size-max-width,
+  	lg: $medium-size-max-width,
+  	xl: 1300px
+);
