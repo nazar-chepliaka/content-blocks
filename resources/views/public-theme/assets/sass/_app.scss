@@ -184,10 +184,15 @@ h1 {
 
 .console {
 	font-family: "Ubuntu Mono", monospace;
-    background: #2e3b46;
+    background: #363e4a;
     padding: 10px;
     border-radius: 10px;
     border: 2px solid #1b1b1c;
+}
+
+.console pre {
+    color: #ffffff;
+    overflow: auto;
 }
 
 .console li {
