@@ -1,7 +1,7 @@
 @import "../../../assets/sass/app";
 
 [data-group=posts_list] [data-role=item] {
-	padding: 12px;
+	padding: 18px 12px;
     margin-top: 14px;
     border-bottom: 3px solid #d9dde2;
 	/* background: #d8d9dc;
@@ -26,8 +26,8 @@
 }
 
 [data-group=posts_list] [data-role=item] [data-role=title] {
-	font-size: 20px;
-	font-weight: 500;
+	font-size: 21px;
+	font-weight: 400;
 	text-decoration: none;
     border-bottom: 1px solid;
 }
