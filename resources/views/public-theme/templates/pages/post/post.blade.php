@@ -7,8 +7,12 @@
     <div data-group="page_content" data-role="wrapper">
         <h1>{{$post->title}}</h1>
 
-        @if(!empty($post->image_path))
-            <img src="{{$post->image_path}}" data-role="main_image">
-        @endif
+        <div data-role="post_content">
+            @if(!empty($post->image_path))
+                <img src="{{$post->image_path}}" data-role="main_image">
+            @endif
+
+            {!! $post->text !!}
+        </div>
     </div>
 @endsection

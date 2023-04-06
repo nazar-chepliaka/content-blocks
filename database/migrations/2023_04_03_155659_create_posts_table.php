@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreign('category_id', 'id_of_category')->references('id')->on('categories')->constrained('categories')->onUpdate('cascade')->onDelete('cascade');
             $table->string('title');
             $table->string('description');
+            $table->mediumText('text');
             $table->string('image_path')->nullable();
             $table->string('seo_title', 255)->nullable();
             $table->text('seo_description')->nullable();

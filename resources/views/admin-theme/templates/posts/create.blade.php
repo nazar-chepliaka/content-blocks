@@ -43,6 +43,11 @@
                             <label>Опис</label>
                             <textarea class="form-control" name="description">{!! old('description') !!}</textarea>
                         </div>
+                        
+                        <div class="form-group">
+                            <label>Текст</label>
+                            <textarea class="form-control" rows="15" name="text">{!! old('text') !!}</textarea>
+                        </div>
 
                         <div class="input-group mb-3">
                           <div class="input-group-prepend">

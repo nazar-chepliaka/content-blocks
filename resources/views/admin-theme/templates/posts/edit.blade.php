@@ -55,6 +55,11 @@
                             <textarea class="form-control" name="description">{!! old('description',$post->description)!!}</textarea>
                         </div>
 
+                        <div class="form-group">
+                            <label>Текст</label>
+                            <textarea class="form-control" name="text" rows="15">{!! old('text',$post->text)!!}</textarea>
+                        </div>
+
                         <div class="input-group mb-3">
                           <div class="input-group-prepend">
                             <span class="input-group-text">Категорія</span>

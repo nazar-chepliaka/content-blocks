@@ -67,6 +67,10 @@ blockquote p {
 	font-weight: 300;
 }
 
+a {
+	color: #4183c4;
+}
+
 h1 {
 	border-bottom: 1px dotted #7e828a;
 	font-size: 26px;
@@ -110,4 +114,90 @@ h1 {
 		margin-right: 16px;
 		margin-left: 16px;
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contents {
+	font-size: 18px;
+}
+
+.h2 {
+	padding-bottom: 0.3em;
+    border-bottom: 1px solid #d9dde2;
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.console {
+	font-family: "Ubuntu Mono", monospace;
+    background: #2e3a4a;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #1b1b1c;
+}
+
+.console li {
+	list-style: none;
+    color: #ffffff;
+}
+
+.console li:before {
+    content: attr(data-prefix);
+    display: inline-block;
+    margin: 0 10px 0 5px;
+    text-align: right;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

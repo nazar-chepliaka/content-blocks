@@ -8,6 +8,10 @@
 	margin-bottom: 22px;
 }
 
+[data-group=page_content] [data-role=post_content] {
+	padding: 0px 12px;
+}
+
 
 /* Tiny */
 @media screen and (max-width: $tiny-size-max-width) {
