@@ -3,8 +3,22 @@
   border-bottom: 5px solid #23354c;
 }
 
+[data-group=pages_header] [data-role=logo] div {
+  height: 57px;
+}
+
+[data-group=pages_header] [data-role=logo] a {
+  padding: 13px 17px;
+  line-height: 9px;
+  background: #23354c;
+  height: 57px;
+}
+
+[data-group=pages_header] [data-role=logo] svg {
+  height: 30px;
+}
+
 [data-group=pages_header] nav ul li {
-  display: inline-block;
   margin: 0px 10px;
 }
 

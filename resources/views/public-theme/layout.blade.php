@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <div data-group="sidebar_content" data-role="wrapper">
-                        <strong>Категорії сайту:</strong>
+                        <strong>Категорії каталогу:</strong>
                         <ul>
                             @foreach($categories as $category)
                                 <li><a href="{{route('categories.show',$category->id)}}">{{$category->title}}</a></li>
