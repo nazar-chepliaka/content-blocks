@@ -19,6 +19,8 @@ class PostsController extends Controller
         SEOMeta::setTitle($post->seo_title);
         SEOMeta::setDescription($post->seo_description);
 
-        return view('public-theme.templates.pages.post.post', compact('post'));
+        $category = $post->category;
+
+        return view('public-theme.templates.pages.post.post', compact('post', 'category'));
     }
 }

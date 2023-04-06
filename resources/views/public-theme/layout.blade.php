@@ -47,8 +47,16 @@
                     <div data-group="sidebar_content" data-role="wrapper">
                         <strong>Категорії каталогу:</strong>
                         <ul>
-                            @foreach($categories as $category)
-                                <li><a href="{{route('categories.show',$category->id)}}">{{$category->title}}</a></li>
+                            @foreach($categories as $category_item)
+                                @php
+                                    $active_class = '';
+                                    
+                                    if(!empty($category) && $category_item->id == $category->id) {
+                                        $active_class = 'active';
+                                    }
+                                @endphp
+
+                                <li class="{{$active_class}}"><a href="{{route('categories.show',$category_item->id)}}">{{$category_item->title}}</a></li>
                             @endforeach
                         </ul>
                     </div>
