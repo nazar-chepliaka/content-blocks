@@ -210,3 +210,16 @@ h1 {
     -ms-user-select: none;
     user-select: none;
 }
+
+.bordered {
+	border: 1px solid #d0d3d6;
+}
+
+.bordered th, .bordered td {
+	border: 1px solid #d0d3d6;
+	padding: 10px 15px;
+}
+
+.bordered tr:hover td {
+	background: #dcdcdc;
+}

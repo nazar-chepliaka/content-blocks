@@ -1,11 +1,17 @@
 @import "../../../assets/sass/app";
 
+[data-group=page_content] img {
+	max-width: 100%;
+}
+
 [data-group=page_content] img[data-role=main_image] {
 	float: right;
 	max-width: 220px;
 	height: auto;
 	margin-left: 22px;
 	margin-bottom: 22px;
+	position: relative;
+    z-index: 2;
 }
 
 [data-group=page_content] [data-role=post_content] {
