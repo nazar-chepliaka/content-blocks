@@ -14,11 +14,11 @@ class CategoriesController extends Controller
      */
     public function show(string $id)
     {
-        $category = Category::find($id);
+        $current_category = Category::find($id);
 
-        SEOMeta::setTitle($category->seo_title);
-        SEOMeta::setDescription($category->seo_description);
+        SEOMeta::setTitle($current_category->seo_title);
+        SEOMeta::setDescription($current_category->seo_description);
 
-        return view('public-theme.templates.pages.category.category', compact('category'));
+        return view('public-theme.templates.pages.category.category', compact('current_category'));
     }
 }

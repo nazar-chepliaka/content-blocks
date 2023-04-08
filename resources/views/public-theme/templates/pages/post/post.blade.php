@@ -9,7 +9,7 @@
 
         <div data-role="post_content">
             @if(!empty($post->image_path))
-                <img src="{{$post->image_path}}" data-role="main_image">
+                <img src="{{$post->image_path}}" alt="{{$post->image_alt}}" title="{{$post->image_title}}" data-role="main_image">
             @endif
 
             {!! $post->text !!}

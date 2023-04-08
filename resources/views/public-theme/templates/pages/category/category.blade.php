@@ -6,28 +6,24 @@
 @section('body')
 
     <div data-group="page_content" data-role="wrapper">
-        <h1>Категорія: «{{$category->title}}»</h1>
+        <h1>Категорія: «{{$current_category->title}}»</h1>
 
         <div data-group="posts_list">
-            @foreach($category->posts as $post)
+            @foreach($current_category->posts as $post)
                 <div data-role="item" class="border_is_width flex">
                     <div class="basis_0 grow">
-                        <a href="{{route('posts.show',$post->id)}}" data-role="title">
+                        <a href="{{route('posts.show',$post->id)}}" data-role="title" title="Стаття «{{$post->title}}»">
                             {{$post->title}}
                         </a><br>
                         <p>{{$post->description}}</p>
-                        <div class="">
-                            <a href="{{route('posts.show',$post->id)}}">
-                                Переглянути >
-                            </a>
-                        </div>
+                        
                     </div>
                     <div data-role="item_image" class="text_center">
-                        <a href="{{route('posts.show',$post->id)}}">
+                        <a href="{{route('posts.show',$post->id)}}" title="Стаття «{{$post->title}}»">
                             @if(!empty($post->image_path))
-                                <img src="{{$post->image_path}}">
+                                <img src="{{$post->image_path}}" alt="{{$post->image_alt}}" title="{{$post->image_title}}">
                             @else
-                                <img src="/assets/common/images/folder-information-outline.svg">
+                                <img alt="Піктограма теки з інформацією" title="Тека з інформацією" src="/assets/common/images/folder-information-outline.svg">
                             @endif
                         </a>
                     </div>

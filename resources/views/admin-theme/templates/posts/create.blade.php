@@ -34,6 +34,20 @@
 
                         <div class="input-group mb-3">
                           <div class="input-group-prepend">
+                            <span class="input-group-text">title зображення</span>
+                          </div>
+                          <input type="text" class="form-control translit"  name="image_title" value="{{ old('image_title') }}">
+                        </div>
+
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">alt зображення</span>
+                          </div>
+                          <input type="text" class="form-control translit"  name="image_alt" value="{{ old('image_alt') }}">
+                        </div>
+
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
                             <span class="input-group-text">Заголовок</span>
                           </div>
                           <input type="text" class="form-control translit"  name="title" value="{{ old('title') }}">

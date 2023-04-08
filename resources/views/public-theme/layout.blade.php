@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
@@ -30,7 +30,7 @@
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
 
         <script src="{{ asset('/assets/common/js/manifest.js') }}"></script>
@@ -47,16 +47,21 @@
                     <div data-group="sidebar_content" data-role="wrapper">
                         <strong>Категорії каталогу:</strong>
                         <ul>
-                            @foreach($categories as $category_item)
+                            @foreach($categories as $category)
                                 @php
                                     $active_class = '';
                                     
-                                    if(!empty($category) && $category_item->id == $category->id) {
+                                    if(!empty($current_category) && $current_category->id == $category->id) {
                                         $active_class = 'active';
                                     }
                                 @endphp
-
-                                <li class="{{$active_class}}"><a href="{{route('categories.show',$category_item->id)}}">{{$category_item->title}}</a></li>
+                                <li class="{{$active_class}}">
+                                    @if(!empty($current_category) && $current_category->id == $category->id)
+                                        <span>{{$category->title}}</span>
+                                    @else
+                                        <a href="{{route('categories.show',$category->id)}}" title="Перелік статей з категорії «{{$category->title}}»">{{$category->title}}</a>
+                                    @endif
+                                </li>
                             @endforeach
                         </ul>
                     </div>
