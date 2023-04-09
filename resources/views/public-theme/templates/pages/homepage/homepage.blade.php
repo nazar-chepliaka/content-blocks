@@ -6,7 +6,8 @@
 @section('body')
 
     <div data-group="page_content" data-role="wrapper">
-        <h1>{{$page->title}}</h1>
+        <h1 data-role="sitename" class="text_center">База знань Ubuntu</h1>
+        <h2 class="h2">{{$page->title}}</h2>
 
         <div class="row">
             @foreach($categories as $category)

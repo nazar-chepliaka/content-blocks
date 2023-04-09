@@ -33,6 +33,7 @@ blockquote p {
 	margin-top: 16px;
 	margin-left: 16px;
 	border-radius: 10px;
+	padding-top: 10px;
 }
 
 [data-group=sidebar_content][data-role=wrapper] {
@@ -120,6 +121,35 @@ h1 {
 	}
 }
 
+hr[data-group=breadcrumbs] {
+	margin: 0px;
+	height: 0px;
+	border: 0px;
+    border-top: 3px solid #bcc1c5;
+    //border-bottom: 1px solid #5a5a5a;
+}
+
+ol[data-group=breadcrumbs] {
+	margin: 0px;
+    padding: 6px 0px;
+}
+
+ol[data-group=breadcrumbs] li {
+	display: inline-block;
+	list-style: none;
+	margin: 5px;
+	line-height: 1.4rem;
+}
+
+
+ol[data-group=breadcrumbs] li a {
+	color: #151515;
+}
+
+ol[data-group=breadcrumbs] li span {
+	color: #151515;
+	font-size: 1rem;
+}
 
 
 
