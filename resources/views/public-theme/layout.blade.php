@@ -42,6 +42,12 @@
         @include('public-theme.templates.widgets.pages-header.index')
 
         <div class="content_wrapper">
+
+            <div class="row">
+                <div class="col-md-12">
+                    @yield('breadcrumbs')
+                </div>
+            </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <div data-group="sidebar_content" data-role="wrapper">

@@ -46,9 +46,9 @@ blockquote p {
 }
 
 [data-group=sidebar_content][data-role=wrapper] strong {
-	color: #142131;
+	color: #232835;
 	display: block;
-    border-bottom: 1px dotted #142131;
+    border-bottom: 1px dotted #232835;
     padding-bottom: 5px;
 }
 
@@ -82,15 +82,18 @@ blockquote p {
 
 a {
 	/* color: #4183c4; */
-	color: #246eb7;
 	/* color: #385d84; */
+
+	/* color: #246eb7; */
+	color: #2064a7;
 }
 
 h1 {
-	border-bottom: 1px dotted #142131;
+	border-bottom: 1px dotted #232835;
 	font-size: 26px;
 	font-weight: 500;
-	color: #142131;
+	/* color: #4c212d; */
+	color: #232835;
 }
 
 
@@ -142,7 +145,8 @@ hr[data-group=breadcrumbs] {
 
 ol[data-group=breadcrumbs] {
 	margin: 0px;
-    padding: 6px 0px;
+    padding: 15px 0px 0px;
+    color: #CCC;
 }
 
 ol[data-group=breadcrumbs] li {
@@ -154,11 +158,11 @@ ol[data-group=breadcrumbs] li {
 
 
 ol[data-group=breadcrumbs] li a {
-	color: #151515;
+	color: #CCC;
 }
 
 ol[data-group=breadcrumbs] li span {
-	color: #151515;
+	color: #CCC;
 	font-size: 1rem;
 }
 
@@ -223,7 +227,7 @@ ol[data-group=breadcrumbs] li span {
     font-size: 22px;
 	display: flex;
 	font-weight: 500;
-	color: #142131;
+	color: #232835;
 }
 
 .console {
