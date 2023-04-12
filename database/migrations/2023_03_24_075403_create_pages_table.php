@@ -27,8 +27,13 @@ return new class extends Migration
         DB::table('pages')->insert([
             [
                 'route_name' => 'homepage',
-                'title' => 'Каталог',
-                'seo_title' => 'Каталог',
+                'title' => 'Категорії бази знань Ubuntu',
+                'seo_title' => 'Категорії бази знань Ubuntu',
+            ],
+            [
+                'route_name' => 'about',
+                'title' => 'Про базу знань Ubuntu',
+                'seo_title' => 'Про базу знань Ubuntu',
             ],
         ]);
     }

@@ -32,6 +32,11 @@ mix
   .sass('resources/views/public-theme/templates/pages/homepage/_style.scss', 'public/assets/pages/homepage')
 ;
 
+/* about page */
+mix
+  .sass('resources/views/public-theme/templates/pages/about/_style.scss', 'public/assets/pages/about')
+;
+
 /* category page */
 mix
   .sass('resources/views/public-theme/templates/pages/category/_style.scss', 'public/assets/pages/category')

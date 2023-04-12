@@ -45,7 +45,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <div data-group="sidebar_content" data-role="wrapper">
-                        <strong>Категорії каталогу:</strong>
+                        <strong>Категорії бази знань:</strong>
                         <ul>
                             @foreach($categories as $category)
                                 @php

@@ -45,13 +45,21 @@ blockquote p {
 	border-radius: 10px;
 }
 
+[data-group=sidebar_content][data-role=wrapper] strong {
+	color: #2e495d;
+	display: block;
+    border-bottom: 1px dotted #2e495d;
+    padding-bottom: 5px;
+}
+
 [data-group=sidebar_content][data-role=wrapper] ul {
 	margin-left: 0px;
 	padding-left: 20px;
+	margin: 12px 0px;
 }
 
 [data-group=sidebar_content][data-role=wrapper] ul li {
-	margin-top: 24px;
+	margin-top: 20px;
 	line-height: 1.45rem;
 	list-style: circle;
 }
@@ -73,13 +81,16 @@ blockquote p {
 }
 
 a {
-	color: #4183c4;
+	/* color: #4183c4; */
+	color: #246eb7;
+	/* color: #385d84; */
 }
 
 h1 {
-	border-bottom: 1px dotted #7e828a;
+	border-bottom: 1px dotted #2e495d;
 	font-size: 26px;
-	font-weight: 400;
+	font-weight: 500;
+	color: #2e495d;
 }
 
 
@@ -211,6 +222,8 @@ ol[data-group=breadcrumbs] li span {
     font-weight: 400;
     font-size: 22px;
 	display: flex;
+	font-weight: 500;
+	color: #2e495d;
 }
 
 .console {
