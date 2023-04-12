@@ -9,7 +9,7 @@
         <h1>Категорії бази знань Ubuntu</h1>
         {{-- <h1 data-role="sitename" class="text_center">База знань Ubuntu</h1><h2 class="h2">{{$page->title}}</h2> --}}
 
-        <div class="row">
+        <div class="row custom_margin">
             @foreach($categories as $category)
                 <div data-group="categories_list" data-role="item_wrapper" class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <a href="{{route('categories.show',$category->id)}}" data-role="item" class="border_is_width flex column text_center" title="Перелік статей з категорії «{{$category->title}}»">
