@@ -22,7 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::namespace('App\Http\Controllers\Api')->group(function () {
     Route::namespace('AdminBackend')->group(function () {
-        Route::post('store-image', 'TinymceEditorController@storeImageForEditor')->name('store_image');
+        //
     });
     
     Route::namespace('PublicBackend')->group(function () {

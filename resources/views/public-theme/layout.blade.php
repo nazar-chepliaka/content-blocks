@@ -41,7 +41,7 @@
     <body>
         @include('public-theme.templates.widgets.pages-header.index')
 
-        <div class="content_wrapper">
+        <main class="content_wrapper">
 
             <div class="row">
                 <div class="col-md-12">
@@ -78,7 +78,7 @@
 
                 </div>
             </div>
-        </div>
+        </main>
        
 
     </body>

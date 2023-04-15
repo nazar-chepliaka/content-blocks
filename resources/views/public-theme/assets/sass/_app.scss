@@ -89,7 +89,7 @@ a {
 
 h1 {
 	border-bottom: 1px dotted;
-	font-size: 26px;
+	font-size: 1.7rem;
 	font-weight: 400;
 	/* color: #4c212d; */
 
@@ -229,7 +229,7 @@ ol[data-group=breadcrumbs] li span {
     margin-top: 1em;
     margin-bottom: 16px;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 	display: flex;
 	font-weight: 400;
 	/* color: #2f4b69; */
@@ -245,13 +245,26 @@ ol[data-group=breadcrumbs] li span {
     border: 1px solid #ccc;
 }
 
+.console code {
+	font-family: "Ubuntu Mono", monospace;
+	color: #000000;
+}
+
 .console pre {
     color: #000;
     overflow: auto;
 }
 
+ol.console {
+    border-left: 28px solid #ccc;
+    padding-left: 6px;
+}
+
+ol.console li {
+    color: #616161;
+}
+
 .console li {
-	list-style: none;
     color: #000;
 }
 

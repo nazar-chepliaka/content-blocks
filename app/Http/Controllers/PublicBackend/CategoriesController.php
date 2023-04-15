@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers\PublicBackend;
 
-use Artesaos\SEOTools\Facades\SEOMeta;
-
 use App\Http\Controllers\Controller;
-use App\Models\Category;
+
+use App\View\Pages\CategoryPage;
 
 class CategoriesController extends Controller
 {
@@ -14,11 +13,8 @@ class CategoriesController extends Controller
      */
     public function show(string $id)
     {
-        $current_category = Category::find($id);
+        $page = new CategoryPage($id);
 
-        SEOMeta::setTitle($current_category->seo_title);
-        SEOMeta::setDescription($current_category->seo_description);
-
-        return view('public-theme.templates.pages.category.category', compact('current_category'));
+        return $page->render();
     }
 }

@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['namespace' => 'App\Http\Controllers\PublicBackend'], function () {
     Route::get('/', 'HomepageController@index')->name('homepage');
-    Route::get('/about', 'AboutController@index')->name('about');
-    Route::get('/categories/{id}', 'CategoriesController@show')->name('categories.show');
-    Route::get('/posts/{id}', 'PostsController@show')->name('posts.show');
+    Route::get('/about/index.html', 'AboutController@index')->name('about');
+    Route::get('/categories/{id}/index.html', 'CategoriesController@show')->name('categories.show');
+    Route::get('/posts/{id}/index.html', 'PostsController@show')->name('posts.show');
 });
 
 Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin-panel')->namespace('App\Http\Controllers\AdminBackend')->group(function () {
